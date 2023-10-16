@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкус очка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/hamburger.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<img class="bg-image" src="image/background2.png" alt="">
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="image/logo 1.png" alt="Лого">
+        </div>
+        <ul class="menu">
+            <li class="menuItems">
+                <a class="link" href="#">ГЛАВНАЯ</a>
+            </li>
+            <li class="menuItems">
+                <a class="link" href="#">МЕНЮ</a>
+            </li>
+            <li class="menuItems">
+                <a class="link" href="#">КОНТАКТЫ</a>
+            </li>
+            <li class="menuItems">
+                <a href="#" class="link">О НАС</a>
+            </li>
+        </ul>
+        <button class="shutter">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+<div class="bottom">
+    <div class="container">
+        <h1 class="title">Быстрая еда для мгновенного голода</h1>
+        <p class="text">«Я не знаю, какой ещё надо сказать комплимент этому гамбургеру, но мне он показался самым
+            вкусным из всех гамбургеров, которые я когда-либо пробовал».</p>
+
+        <a href="#" class="btn">Заказать</a>
+    </div>
+</div>
+<script>
+    const shutter = document.querySelector('.shutter');
+    const menu = document.querySelector('.menu');
+
+    shutter.addEventListener('click', function (){
+        menu.classList.toggle('active')
+    })
+</script>
+</body>
+</html>
